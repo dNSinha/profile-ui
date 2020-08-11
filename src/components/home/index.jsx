@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Navbar from 'Components/navbar';
+import './style.scss';
 
 export class Home extends React.Component {
 
@@ -17,10 +19,14 @@ export class Home extends React.Component {
 
   render() {
     return (
-      <div>
-        <p>Home Works!</p>
-        <p>{process.env.GOOGLE_URL}</p>
-        {this.state.sample}
+      <div className='image-opacity container'>
+        <img src="./images/bg1.jpg"></img>
+        {/* <div className="top-left"><Navbar /></div> */}
+        <div className="bottom-left">Bottom Left</div>
+        <div className="top-left">Top Left</div>
+        <div className="top-right">Top Right</div>
+        <div className="bottom-right">Bottom Right</div>
+        <div className="centered">Centered</div>
       </div>
     );
   }

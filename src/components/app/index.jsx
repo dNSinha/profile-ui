@@ -3,20 +3,27 @@ import { BrowserRouter as Router } from "react-router-dom";
 import Routes from 'Components/App/routes';
 import Loader from 'Components/loader';
 import Header from 'Components/headers';
-import CenteredTabs from 'Components/navbar';
+import Navbar from 'Components/navbar';
+import Experience from 'Components/experience';
+import Cards from 'Components/common/cards';
+import Home from 'Components/home';
+import './style.scss';
 
 
 export class App extends React.Component {
     render() {
         return (
-            <div>
-                <CenteredTabs />
+            <div className="main">
+                <Navbar />
+                <Home />
                 {/* <Header /> to customise later */}
-                <Router>
+                <Experience />
+                <Cards />
+                {/* <Router>
                     <Suspense fallback={<Loader />}>
                         <Routes />
                     </Suspense>
-                </Router>
+                </Router> */}
             </div>
         );
     }

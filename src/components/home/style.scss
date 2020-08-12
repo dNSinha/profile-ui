@@ -1,46 +1,70 @@
-.image-opacity {
-  opacity: 0.5;
-}
+// .image-opacity {
+//   opacity: 0.8;
+//   // background: rgba(black, 0.5);
+// }
 
 /* Container holding the image and the text */
 .container {
   position: relative;
   text-align: center;
   color: white;
+  display: flex;
+  justify-content: center;
+  // align-items: center;
 }
 
-/* Bottom left text */
-.bottom-left {
-  position: absolute;
-  bottom: 8px;
-  left: 16px;
+.details {
+  text-align: right;
 }
 
-/* Top left text */
-.top-left {
-  position: absolute;
-  top: 8px;
-  left: 16px;
+.container .content {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 80%; /* Full width */
+  padding: 20px; /* Some padding */
+  margin-bottom: 30px;
 }
 
-/* Top right text */
-.top-right {
-  position: absolute;
-  top: 8px;
-  right: 16px;
+.image-container {
+  height: 56em;
 }
 
-/* Bottom right text */
-.bottom-right {
-  position: absolute;
-  bottom: 8px;
-  right: 16px;
-}
+// /* Bottom left text */
+// .bottom-left {
+//   position: absolute;
+//   bottom: 8px;
+//   left: 16px;
+// }
 
-/* Centered text */
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+// /* Top left text */
+// .top-left {
+//   position: absolute;
+//   top: 8px;
+//   left: 16px;
+// }
+
+// /* Top right text */
+// .top-right {
+//   position: absolute;
+//   top: 8px;
+//   right: 16px;
+// }
+
+// /* Bottom right text */
+// .bottom-right {
+//   position: absolute;
+//   bottom: 8px;
+//   right: 16px;
+// }
+
+// /* Centered text */
+// .centered {
+//   position: absolute;
+//   margin: auto;
+//   // top: 50%;
+//   // left: 50%;
+//   // transform: translate(-50%, -77%);// right side -50 will change height
+// }

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Navbar from 'Components/navbar';
 import './style.scss';
 
 export class Home extends React.Component {
@@ -19,15 +18,19 @@ export class Home extends React.Component {
 
   render() {
     return (
-      <div className='image-opacity container'>
-        <img src="./images/bg1.jpg"></img>
-        {/* <div className="top-left"><Navbar /></div> */}
-        <div className="bottom-left">Bottom Left</div>
-        <div className="top-left">Top Left</div>
-        <div className="top-right">Top Right</div>
-        <div className="bottom-right">Bottom Right</div>
-        <div className="centered">Centered</div>
-      </div>
+      <div className='container'>
+        <img className="image-container" src="./images/header.jpg"></img>
+        {/* <div className="bottom-left">Bottom Left</div> */}
+        {/* <div className="top-left">Top Left</div> */}
+        <div className="content">
+          <h1>DURGESH NANDAN SINHA</h1>
+          <p>Web developer</p>
+          <h2>I am a full stack web developer with robust problem-solving skills and proven experience in creating and designing software in a test-driven environment following Agile principles. </h2>
+          <p className="details">Lorem ipsum..</p>
+        </div >
+        {/* <div className="bottom-right">Bottom Right</div> */}
+        {/* <div className="centered">Centered</div> */}
+      </div >
     );
   }
 }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ProfileDetails from 'Components/common/profileDetails';
 import './style.scss';
 
 export class Home extends React.Component {
@@ -26,7 +27,15 @@ export class Home extends React.Component {
           <h1>DURGESH NANDAN SINHA</h1>
           <p>Web developer</p>
           <h2>I am a full stack web developer with robust problem-solving skills and proven experience in creating and designing software in a test-driven environment following Agile principles. </h2>
-          <p className="details">Lorem ipsum..</p>
+          <div className="profile-section">
+            <div className="avatar">
+              <img className="profile-image" src="./images/bikeImage.jpg"></img>
+            </div>
+            <div className="details">
+              <ProfileDetails />
+              Lorem ipsum..
+          </div>
+          </div>
         </div >
         {/* <div className="bottom-right">Bottom Right</div> */}
         {/* <div className="centered">Centered</div> */}

@@ -7,6 +7,8 @@ import Navbar from 'Components/navbar';
 import Experience from 'Components/experience';
 import Cards from 'Components/common/cards';
 import Home from 'Components/home';
+import ContactMe from 'Components/contactMe';
+import Skills from 'Components/skills';
 import './style.scss';
 
 
@@ -19,6 +21,8 @@ export class App extends React.Component {
                 {/* <Header /> to customise later */}
                 <Experience />
                 <Cards />
+                <Skills />
+                <ContactMe />
                 {/* <Router>
                     <Suspense fallback={<Loader />}>
                         <Routes />

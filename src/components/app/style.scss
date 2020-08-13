@@ -3,7 +3,29 @@
     overflow-x: hidden;
 }
 
-::-webkit-scrollbar {
-    width: 0px;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
-}
+// ::-webkit-scrollbar {
+//     width: 0px;  /* Remove scrollbar space */
+//     background: transparent;  /* Optional: just make scrollbar invisible */
+// }
+
+
+
+// From
+// https://alligator.io/css/css-scrollbars/
+
+body::-webkit-scrollbar {
+    width: 5px;               /* width of the entire scrollbar */
+  }
+  body::-webkit-scrollbar-track {
+    // background: grey;        /* color of the tracking area */
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #f50057;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    // border: 3px solid grey;  /* creates padding around scroll thumb */
+  }
+
+  body {
+    scrollbar-width: thin;          /* "auto" or "thin"  */
+    scrollbar-color: blue orange;   /* scroll thumb & track */ 
+  }

@@ -9,6 +9,10 @@ import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
 import FastfoodIcon from '@material-ui/icons/Fastfood';
 import LocationCityIcon from '@material-ui/icons/LocationCity';
+import PhoneIcon from '@material-ui/icons/Phone';
+import MailIcon from '@material-ui/icons/Mail';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -28,55 +32,37 @@ export default function ProfileDetails() {
         <List className={classes.root}>
             <ListItem alignItems="flex-start">
                 <ListItemAvatar>
-                    <FastfoodIcon />
-                </ListItemAvatar>
-                <ListItemText
-                    primary="Brunch this weekend?"
-                />
-            </ListItem>
-            <Divider variant="inset" component="li" />
-            <ListItem alignItems="flex-start">
-                <ListItemAvatar>
                     <LocationCityIcon />
                 </ListItemAvatar>
-                <ListItemText
-                    primary="Summer BBQ"
-                    secondary={
-                        <React.Fragment>
-                            <Typography
-                                component="span"
-                                variant="body2"
-                                className={classes.inline}
-                                color="textPrimary"
-                            >
-                                to Scott, Alex, Jennifer
-              </Typography>
-                            {" — Wish I could come, but I'm out of town this…"}
-                        </React.Fragment>
-                    }
-                />
+                <ListItemText primary="#104, Padmalaya Residency, 2nd main, Vittal Nagar, K.S. Layout, Bangalore - 560078, India" />
             </ListItem>
-            <Divider variant="inset" component="li" />
+            {/* <Divider variant="inset" component="li" /> */}
             <ListItem alignItems="flex-start">
                 <ListItemAvatar>
-                    <Avatar alt="Cindy Baker" src="/static/images/avatar/3.jpg" />
+                    <PhoneIcon />
                 </ListItemAvatar>
-                <ListItemText
-                    primary="Oui Oui"
-                    secondary={
-                        <React.Fragment>
-                            <Typography
-                                component="span"
-                                variant="body2"
-                                className={classes.inline}
-                                color="textPrimary"
-                            >
-                                Sandra Adams
-              </Typography>
-                            {' — Do you have Paris recommendations? Have you ever…'}
-                        </React.Fragment>
-                    }
-                />
+                <ListItemText primary="+91 - 99807 73072" />
+            </ListItem>
+            {/* <Divider variant="inset" component="li" /> */}
+            <ListItem alignItems="flex-start">
+                <ListItemAvatar>
+                    <MailIcon />
+                </ListItemAvatar>
+                <ListItemText primary="dnsinha33@gmail.com" />
+            </ListItem>
+
+            <ListItem alignItems="flex-start">
+                <ListItemAvatar>
+                    <GitHubIcon />
+                </ListItemAvatar>
+                <ListItemText primary="github.com/dnsinha" />
+            </ListItem>
+
+            <ListItem alignItems="flex-start">
+                <ListItemAvatar>
+                    <LinkedInIcon />
+                </ListItemAvatar>
+                <ListItemText primary="www.linkedin.com/in/dnsinha33" />
             </ListItem>
         </List>
     );

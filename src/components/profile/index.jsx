@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ProfileDetails from 'Components/common/profileDetails';
 import './style.scss';
 
-export class Home extends React.Component {
+export class Profile extends React.Component {
 
   constructor(props) {
     super(props)
@@ -33,8 +33,7 @@ export class Home extends React.Component {
             </div>
             <div className="details">
               <ProfileDetails />
-              Lorem ipsum..
-          </div>
+            </div>
           </div>
         </div >
         {/* <div className="bottom-right">Bottom Right</div> */}
@@ -44,4 +43,4 @@ export class Home extends React.Component {
   }
 }
 
-export default Home;
+export default Profile;

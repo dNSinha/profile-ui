@@ -6,7 +6,7 @@ import Header from 'Components/headers';
 import Navbar from 'Components/navbar';
 import Experience from 'Components/experience';
 import Cards from 'Components/common/cards';
-import Home from 'Components/home';
+import Profile from 'Components/profile';
 import ContactMe from 'Components/contactMe';
 import Skills from 'Components/skills';
 import './style.scss';
@@ -17,8 +17,7 @@ export class App extends React.Component {
         return (
             <div className="main">
                 <Navbar />
-                <Home />
-                {/* <Header /> to customise later */}
+                <Profile />
                 <Experience />
                 <Cards />
                 <Skills />

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import FormInput from 'Components/common/formInput';
 import './style.scss';
 
 export class ContactMe extends React.Component {
@@ -19,7 +20,10 @@ export class ContactMe extends React.Component {
     render() {
         return (
             <div className='container'>
-                <img className="image-container" src="./images/bg1.jpg"></img>
+                {/* <img className="image-container" src="./images/bg1.jpg"></img> */}
+                {/* <div className="content"> */}
+                    <FormInput />
+                {/* </div> */}
             </div >
         );
     }

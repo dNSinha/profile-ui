@@ -1,8 +1,4 @@
-import React, { Component, Suspense } from 'react';
-import { BrowserRouter as Router } from "react-router-dom";
-import Routes from 'Components/App/routes';
-import Loader from 'Components/loader';
-import Header from 'Components/headers';
+import React, { Component } from 'react';
 import Navbar from 'Components/navbar';
 import Experience from 'Components/experience';
 import Cards from 'Components/common/cards';
@@ -22,11 +18,6 @@ export class App extends React.Component {
                 <Cards />
                 <Skills />
                 <ContactMe />
-                {/* <Router>
-                    <Suspense fallback={<Loader />}>
-                        <Routes />
-                    </Suspense>
-                </Router> */}
             </div>
         );
     }

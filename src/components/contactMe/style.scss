@@ -1,3 +1,44 @@
-.form-group {
+/* Container holding the image and the text */
+.contact-me-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+  }
+  
+  .contact-me-section {
+    display: flex;
+  }
+  
+  .form-group {
     background-color: white;
+    flex: 1;
 }
+  .contact-me-details {
+    margin-right: 8em;
+  }
+  
+  .contact-me-details:form-group {
+    margin-right: 20px;
+    text-align: right;
+  }
+  
+  
+  
+  .contact-me-container .contact-me-content {
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 80%; /* Full width */
+    padding: 20px; /* Some padding */
+    margin-bottom: 10em;
+  }
+  
+  .contact-me-image-container {
+    height: 58em;
+  }
+  

@@ -14,7 +14,9 @@ export class App extends React.Component {
     render() {
         return (
             <div className="main">
-                <Navbar />
+                <div className="nav-section">
+                    <Navbar />
+                </div>
                 <Profile />
                 <div className="background-section">
                     <div className="section-heading">
@@ -36,7 +38,7 @@ export class App extends React.Component {
                 </div>
                 {/* <Typography variant="h4" gutterBottom>Skills</Typography>
                 <Skills /> */}
-                <div className="">
+                <div className="contact-me">
                     <div className="section-heading">
                         <Typography align="center" variant="h4" gutterBottom>Contact Me</Typography>
                     </div>

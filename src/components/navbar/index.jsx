@@ -1,5 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
@@ -22,16 +23,23 @@ export default function Navbar() {
 
     return (
         <Paper className={classes.root}>
-            <Tabs
-                value={value}
-                onChange={handleChange}
-                indicatorColor="primary"
-                textColor="primary"
-            >
-                <Tab label="Item One" />
-                <Tab label="Item Two" />
-                <Tab label="Item Three" />
-            </Tabs>
+            <div className="navbar">
+                <div className="navbrand">
+                    <Typography variant="h5" gutterBottom>Durgesh Nandan Sinha</Typography>
+                </div>
+                <div className='tabs'>
+                    <Tabs
+                        value={value}
+                        onChange={handleChange}
+                        indicatorColor="primary"
+                        textColor="primary"
+                    >
+                        <Tab label="EXPERIENCE" />
+                        <Tab label="PROJECTS" />
+                        <Tab label="CONTACT" />
+                    </Tabs>
+                </div>
+            </div>
         </Paper>
     );
 }

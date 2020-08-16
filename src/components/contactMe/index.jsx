@@ -21,14 +21,14 @@ export class ContactMe extends React.Component {
 
     render() {
         return (
-            <div className='container'>
-                <img className="image-container" src="./images/contactMe.png"></img>
-                <div className="content">
-                    <div className="profile-section">
-                        <div className="avatar form-group">
+            <div className='contact-me-container'>
+                <img className="contact-me-image-container" src="./images/contactMe.png"></img>
+                <div className="contact-me-content">
+                    <div className="contact-me-section">
+                        <div className="form-group">
                             <FormGroup />
                         </div>
-                        <div className="details">
+                        <div className="contact-me-details">
                             <ProfileDetails />
                         </div>
                     </div>

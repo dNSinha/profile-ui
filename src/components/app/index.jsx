@@ -16,16 +16,32 @@ export class App extends React.Component {
             <div className="main">
                 <Navbar />
                 <Profile />
-                <Typography align="center" variant="h4" gutterBottom>Hello! I'm Durgesh</Typography>
-                <AboutMe />
-                <Typography align="center" variant="h4" gutterBottom>Experience</Typography>
-                <Experience />
-                <Typography align="center" variant="h4" gutterBottom>Projects</Typography>
-                <Projects />
+                <div className="background-section">
+                    <div className="section-heading">
+                        <Typography align="center" variant="h4" gutterBottom>Hello! I'm Durgesh</Typography>
+                    </div>
+                    <AboutMe />
+                </div>
+                <div className="padding-section">
+                    <div className="section-heading">
+                        <Typography align="center" variant="h4" gutterBottom>Experience</Typography>
+                    </div>
+                    <Experience />
+                </div>
+                <div className="background-section">
+                    <div className="section-heading">
+                        <Typography align="center" variant="h4" gutterBottom>Projects</Typography>
+                    </div>
+                    <Projects />
+                </div>
                 {/* <Typography variant="h4" gutterBottom>Skills</Typography>
                 <Skills /> */}
-                <Typography align="center" variant="h4" gutterBottom>Contact Me</Typography>
-                <ContactMe />
+                <div className="">
+                    <div className="section-heading">
+                        <Typography align="center" variant="h4" gutterBottom>Contact Me</Typography>
+                    </div>
+                    <ContactMe />
+                </div>
             </div>
         );
     }

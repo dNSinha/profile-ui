@@ -20,16 +20,16 @@ export class Profile extends React.Component {
   render() {
     return (
       <div className='container'>
-        <img className="image-container" src="./images/header.jpg"></img>
+        <img className="image-container" src="./images/corporate.png"></img>
         {/* <div className="bottom-left">Bottom Left</div> */}
         {/* <div className="top-left">Top Left</div> */}
         <div className="content">
           <h1>DURGESH NANDAN SINHA</h1>
-          <p>Web developer</p>
-          <h2>I am a full stack web developer with robust problem-solving skills and proven experience in creating and designing software in a test-driven environment following Agile principles. </h2>
+          <p>Software developer</p>
+          {/* <h2>I am a full stack web developer with robust problem-solving skills and proven experience in creating and designing software in a test-driven environment following Agile principles. </h2> */}
           <div className="profile-section">
             <div className="avatar">
-              <img className="profile-image" src="./images/bikeImage.jpg"></img>
+              <img className="profile-image" src="./images/profile.jpg"></img>
             </div>
             <div className="details">
               <ProfileDetails />

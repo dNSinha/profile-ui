@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import FormInput from 'Components/common/formInput';
+import FormGroup from 'Components/common/formGroup';
+import ProfileDetails from 'Components/common/profileDetails';
+import Lists from 'Components/common/lists';
 import './style.scss';
 
 export class ContactMe extends React.Component {
@@ -20,9 +22,19 @@ export class ContactMe extends React.Component {
     render() {
         return (
             <div className='container'>
-                {/* <img className="image-container" src="./images/bg1.jpg"></img> */}
-                {/* <div className="content"> */}
-                    <FormInput />
+                <img className="image-container" src="./images/contactMe.png"></img>
+                <div className="content">
+                    <div className="profile-section">
+                        <div className="avatar form-group">
+                            <FormGroup />
+                        </div>
+                        <div className="details">
+                            <ProfileDetails />
+                        </div>
+                    </div>
+                </div>
+                {/* <FormGroup />
+                <Lists /> */}
                 {/* </div> */}
             </div >
         );

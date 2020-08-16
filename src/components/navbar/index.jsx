@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
+import './style.scss';
 
 const useStyles = makeStyles({
     root: {
@@ -26,7 +27,6 @@ export default function Navbar() {
                 onChange={handleChange}
                 indicatorColor="primary"
                 textColor="primary"
-                centered
             >
                 <Tab label="Item One" />
                 <Tab label="Item Two" />

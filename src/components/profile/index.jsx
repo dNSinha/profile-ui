@@ -35,7 +35,7 @@ export class Profile extends React.Component {
               <ProfileDetails />
             </div>
           </div>
-        </div >
+        </div>
         {/* <div className="bottom-right">Bottom Right</div> */}
         {/* <div className="centered">Centered</div> */}
       </div >

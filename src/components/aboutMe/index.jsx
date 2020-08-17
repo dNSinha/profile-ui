@@ -7,7 +7,7 @@ export class AboutMe extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            sample: 'hi'
+            sample: 'hi dn'
         }
     }
 

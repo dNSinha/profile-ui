@@ -15,7 +15,8 @@
     "test": "jest --coverage --silent --colors"
   },
   "engines": {
-    "node": "8.x"
+    "node": "12.18.3",
+    "npm": "6.11.3"
   },
   "author": "dnsinha33",
   "license": "MIT",

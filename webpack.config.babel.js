@@ -8,7 +8,7 @@ import UglifyJsPlugin from 'uglifyjs-webpack-plugin';
 import OptimizeCSSAssetsPlugin from 'optimize-css-assets-webpack-plugin';
 import dotenv from 'dotenv';
 
-const outputDirectory = path.resolve(__dirname, 'dist');
+const outputDirectory = path.resolve(__dirname, 'build');
 const env = process.env.NODE_ENV || 'development';
 const sourceMap = env !== 'production';
 
@@ -150,7 +150,7 @@ module.exports = {
         maxAssetSize: 400000
     },
     plugins: [
-        new CleanPlugin(['dist'], {}),
+        new CleanPlugin(['build'], {}),
         new HtmlWebPackPlugin({
             template: "./src/index.html",
             filename: "./index.html"
